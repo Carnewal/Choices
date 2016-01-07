@@ -1,0 +1,143 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Choices"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:measureWithLargestChild="false"
+    android:stretchColumns="*" >
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#259c968b"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp" >
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/etSearch"
+            android:layout_alignTop="@+id/tvContacts"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Search Google" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:id="@+id/btnSearch"
+            android:layout_column="2"
+            android:layout_span="1"
+            android:onClick="actionSearch"
+            android:layout_marginRight="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#259c968b"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etURL"
+            android:layout_alignTop="@+id/tvContacts"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Enter a URL" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go"
+            android:id="@+id/btnGoWebsite"
+            android:layout_column="2"
+            android:layout_span="1"
+            android:onClick="actionUrl"
+            android:layout_marginRight="30dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#259c968b"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Open contacts: "
+            android:id="@+id/tvContacts" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Contacts"
+            android:id="@+id/btnContacts"
+            android:layout_column="2"
+            android:layout_span="1"
+            android:onClick="actionContacts"
+            android:layout_marginRight="30dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#259c968b"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Voice command: "
+            android:id="@+id/tvVoice" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Voice"
+            android:id="@+id/btnVoice"
+            android:layout_column="2"
+            android:layout_span="1"
+            android:onClick="actionVoice"
+            android:layout_marginRight="30dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#259c968b"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Go to the dialer: "
+            android:id="@+id/tvDialer" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Dialer"
+            android:id="@+id/btnDialer"
+            android:layout_column="2"
+            android:layout_span="1"
+            android:onClick="actionDialer"
+            android:layout_marginRight="30dp" />
+    </TableRow>
+</TableLayout>
